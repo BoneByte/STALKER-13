@@ -126,7 +126,7 @@ Assistant
 	forbids = "Antagonize stalkers by harming or stealing from them, working with Freedom, Renegades, or the Bandits, and jeopordize the faction for an insignificant reason."
 	supervisors = "Major"
 	selection_color = "#601919"
-	whitelist_only = 0
+	whitelist_only = 1
 	outfit = /datum/outfit/job/duty_lieutenant
 	real_rank = "Lieutenant"
 	exp_type = EXP_TYPE_CREW

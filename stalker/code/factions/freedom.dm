@@ -87,7 +87,7 @@
 	forbids = "Antagonize stalkers by harming or stealing from them, cause trouble with other factions without a good reason, run off solo without communicating with others about what you're doing, and working with the Military or Duty."
 	supervisors = "Lieutenant"
 	selection_color = "#601919"
-	whitelist_only = 0
+	whitelist_only = 1
 	outfit = /datum/outfit/job/freedom_lieutenant
 	real_rank = "Lieutenant"
 	exp_type = EXP_TYPE_CREW

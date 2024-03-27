@@ -1,4 +1,3 @@
-valtosss = Trader
-valtosss = Monolith
-valtosss = Monolith Hegumen
-valtosss = Trap
+argentinogostoso = Duty Lieutenant
+guiamareloo = Mercenary Commander
+thuxtk = Freedom Lieutenant

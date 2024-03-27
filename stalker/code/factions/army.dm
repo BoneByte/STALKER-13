@@ -35,7 +35,7 @@ Assistant
 	forbids = "Leave the base independently for any reason, disobey orders given by a superior, and start trouble with other factions before clearing it with superiors."
 	supervisors = "Military Commander"
 	selection_color = "#2E8B57"
-	whitelist_only = 0
+	whitelist_only = 1
 	locked = 1
 	outfit = /datum/outfit/job/army_spetsnaz
 	real_rank = "Special"
@@ -110,7 +110,7 @@ Assistant
 	selection_color = "#2E8B57"
 	access = list()			//See /datum/job/assistant/get_access()
 	minimal_access = list()	//See /datum/job/assistant/get_access()
-	whitelist_only = 0
+	whitelist_only = 1
 	real_rank = "Lieutenant"
 	exp_type = EXP_TYPE_CREW
 	exp_requirements = 900
