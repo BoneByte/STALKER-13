@@ -26,11 +26,9 @@ var/list/floating_chat_colors = list()
 	// create 2 messages, one that appears if you know the language, and one that appears when you don't know the language
 	var/image/understood = generate_floating_text(src, capitalize(message), style, fontsize, duration, show_to)
 	//var/image/gibberish = language ? generate_floating_text(src, language.scramble(message), style, fontsize, duration, show_to) : understood
-	to_chat(world, "FALOU1")
 	for(var/client/C in show_to)
 		if(C.mob.can_hear())
 			C.images += understood
-			to_chat(world, "FALOU2")
 			/*if(C.mob.say_understands(null, language))
 				C.images += understood
 			else
@@ -48,13 +46,10 @@ var/list/floating_chat_colors = list()
 
 	style = "font-family: 'Small Fonts'; -dm-text-outline: 1 black; font-size: [size]px; [style]"
 	I.maptext = "<center><span style=\"[style]\">[message]</span></center>"
-	animate(I, 1, alpha = 255, pixel_y = 16)
-	to_chat(world, "FALOU3")
-
+	animate(I, 1, alpha = 255, pixel_y = 22)
 	for(var/image/old in holder.stored_chat_text)
 		animate(old, 2, pixel_y = old.pixel_y + 8)
 	LAZYADD(holder.stored_chat_text, I)
-	to_chat(world, "FALOU4")
 	addtimer(CALLBACK(GLOBAL_PROC, .proc/remove_floating_text, holder, I), duration)
 	addtimer(CALLBACK(GLOBAL_PROC, .proc/remove_images_from_clients, I, show_to), duration + 2)
 

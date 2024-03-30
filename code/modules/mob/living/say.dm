@@ -208,7 +208,6 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	for(var/mob/M in listening)
 		if(M.client)
 			speech_bubble_recipients.Add(M.client)
-	to_chat(world, "FALOU")
 	INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, message, language, 0, speech_bubble_recipients, 40)
 	send_speech(message, message_range, src, bubble_type, spans, language, message_mode)
 
