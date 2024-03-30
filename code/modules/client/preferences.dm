@@ -234,7 +234,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			//dat += "<table width='100%'><tr><td width='24%' valign='top'>"
 
-			//dat += "<b>Species:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a><BR>"
+			dat += "<b>Species:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a><BR>"
 
 			dat += "<div class='aflex'><b>Underwear:</b> <a href ='?_src_=prefs;preference=underwear;task=input'>[underwear]</a></div>"
 			dat += "<div class='aflex'><b>Undershirt:</b> <a href ='?_src_=prefs;preference=undershirt;task=input'>[undershirt]</a></div>"

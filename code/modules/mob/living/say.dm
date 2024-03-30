@@ -203,13 +203,18 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	//if(pressure < ONE_ATMOSPHERE*0.4) //Thin air, let's italicise the message
 	//	spans |= SPAN_ITALICS
-
+	var/list/listening = get_hearers_in_view(message_range, src)
+	var/list/speech_bubble_recipients = list()
+	for(var/mob/M in listening)
+		if(M.client)
+			speech_bubble_recipients.Add(M.client)
+	to_chat(world, "FALOU")
+	INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, message, language, 0, speech_bubble_recipients, 40)
 	send_speech(message, message_range, src, bubble_type, spans, language, message_mode)
 
 	if(succumbed)
 		succumb(1)
 		to_chat(src, compose_message(src, language, message, , spans, message_mode))
-
 	return 1
 
 /mob/living/Hear(message, atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, message_mode)

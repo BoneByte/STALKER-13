@@ -3070,4 +3070,5 @@
 #include "stalker\code\turfs\ship_hull.dm"
 #include "stalker\code\turfs\stalkerturfs.dm"
 #include "honk\code\game\objects\effects\decals\Cleanable\misc.dm"
+#include "code\modules\mob\living\floating_say.dm"
 // END_INCLUDE
