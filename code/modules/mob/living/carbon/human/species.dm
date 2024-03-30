@@ -74,7 +74,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/obj/item/organ/liver/mutantliver
 	var/obj/item/organ/stomach/mutantstomach
 	var/override_float = FALSE
-
+	var/genitals = 0						  //For erp
+	var/anus = 0							  //Also for erp
 	var/typing_indicator_state
 
 	//Bitflag that controls what in game ways can select this species as a spawnable source

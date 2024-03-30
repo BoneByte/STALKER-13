@@ -2186,6 +2186,7 @@
 #include "code\modules\mob\living\carbon\human\human_defines.dm"
 #include "code\modules\mob\living\carbon\human\human_helpers.dm"
 #include "code\modules\mob\living\carbon\human\human_movement.dm"
+#include "code\modules\mob\living\carbon\human\interactions.dm"
 #include "code\modules\mob\living\carbon\human\inventory.dm"
 #include "code\modules\mob\living\carbon\human\life.dm"
 #include "code\modules\mob\living\carbon\human\physiology.dm"
@@ -3068,4 +3069,5 @@
 #include "stalker\code\turfs\areas.dm"
 #include "stalker\code\turfs\ship_hull.dm"
 #include "stalker\code\turfs\stalkerturfs.dm"
+#include "honk\code\game\objects\effects\decals\Cleanable\misc.dm"
 // END_INCLUDE
